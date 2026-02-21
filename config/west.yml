@@ -18,7 +18,7 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module
       remote: prospector
-      revision: main
+      revision: v2.1.0  # Latest version
       path: modules/prospector-zmk-module
   self:
     path: config
