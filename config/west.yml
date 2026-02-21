@@ -6,6 +6,8 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: prospector
+      url-base: https://github.com/t-ogura
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -14,5 +16,9 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: main
+      path: modules/prospector-zmk-module
   self:
     path: config
